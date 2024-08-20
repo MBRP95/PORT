@@ -78,7 +78,7 @@ body {
 	
 $('#promo').wScratchPad({
     // the size of the eraser
-    size        : 100,    
+    size        : 5,    
     // the randomized scratch image   
     bg: 'images/back.jpg',
     // give real-time updates
@@ -90,7 +90,7 @@ $('#promo').wScratchPad({
     
     scratchMove: function (e, percent) {
         // Show the result image when the scratch area is 20% scratched
-        if (percent > 20) {
+        if (percent > 40) {
           $('#result-image').show();
         }
       }
