@@ -91,7 +91,7 @@ var promoCode ="Femmina";
 	
 $('#promo').wScratchPad({
     // the size of the eraser
-    size        : 5,    
+    size        : 100,    
     // the randomized scratch image   
     bg: 'images/back.jpg',
     // give real-time updates
@@ -103,7 +103,7 @@ $('#promo').wScratchPad({
     
     scratchMove: function (e, percent) {
         // Show the plain-text promo code and call-to-action when the scratch area is 50% scratched
-        if ((percent > 5) && (promoCode != '')) {
+        if ((percent > 95) && (promoCode != '')) {
           $('.promo-container').show();
           $('body').removeClass('not-selectable');
           $('.promo-code').html('Your code is: ' + promoCode);
