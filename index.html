@@ -85,9 +85,6 @@ body {
 <script type="text/javascript" src="https://jennamolby.com/scratch-and-win/js/wScratchPad.min.js"></script>
 
 <script type="text/javascript">
-
-var promoCode ="Femmina";
-
 	
 $('#promo').wScratchPad({
     // the size of the eraser
@@ -103,10 +100,10 @@ $('#promo').wScratchPad({
     
     scratchMove: function (e, percent) {
         // Show the plain-text promo code and call-to-action when the scratch area is 50% scratched
-        if ((percent > 95) && (promoCode != '')) {
+        if (percent > 95) {
           $('.promo-container').show();
           $('body').removeClass('not-selectable');
-          $('.promo-code').html('Your code is: ' + promoCode);
+          $('.promo-code').html('FEMMINA');
         }
       }
  });
